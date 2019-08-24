@@ -61,6 +61,16 @@ storiesOf('DigitalDigit', module)
     <div style={style}>
       <DigitalDigit digit={9} color={color} />
     </div>
+  ))
+  .add('with opacity of segment 1', () => (
+    <div style={style}>
+      <DigitalDigit digit={4} color={color} opacitySegment={1} />
+    </div>
+  ))
+  .add('with opacity of segment 0', () => (
+    <div style={style}>
+      <DigitalDigit digit={4} color={color} opacitySegment={0} />
+    </div>
   ));
 
 storiesOf('DigitalDigitRaw', module)

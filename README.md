@@ -14,25 +14,27 @@ There are two components. One for displaying digits (DigitalDigit) and one gener
 
 ### Props accepted by DigitalDigit
 
-| Name  | Type   | Required | Default | Description               |
-|-------|--------|----------|---------|---------------------------|
-| color | string | yes      | -       | The color of the segments |
-| digit | 0 .. 9 | yes      | -       | The digit to be displayed |
+| Name           | Type   | Required | Default | Description                                     |
+|----------------|--------|----------|---------|-------------------------------------------------|
+| color          | string | yes      | -       | The color of the segments                       |
+| digit          | 0 .. 9 | yes      | -       | The digit to be displayed                       |
+| opacitySegment | number | no       | 0.3     | Controls the opacity of the segments turned off |
 
 ### Props accepted by DigitalDigitRaw
 
-| Name  | Type    | Required | Default | Description             |
-|-------|---------|----------|---------|-------------------------|
-| a     | boolean | no       | false   | The top segment         |
-| b     | boolean | no       | false   | The upper left segment  |
-| c     | boolean | no       | false   | The upper right segment |
-| color | string  | yes      | -       | The color of segments   |
-| d     | boolean | no       | false   | The middle segment      |
-| e     | boolean | no       | false   | The lower left segment  |
-| f     | boolean | no       | false   | The lower right segment |
-| g     | boolean | no       | false   | The bottom segment      |
+| Name           | Type    | Required | Default | Description                                     |
+|----------------|---------|----------|---------|-------------------------------------------------|
+| a              | boolean | no       | false   | The top segment                                 |
+| b              | boolean | no       | false   | The upper left segment                          |
+| c              | boolean | no       | false   | The upper right segment                         |
+| color          | string  | yes      | -       | The color of segments                           |
+| d              | boolean | no       | false   | The middle segment                              |
+| e              | boolean | no       | false   | The lower left segment                          |
+| f              | boolean | no       | false   | The lower right segment                         |
+| g              | boolean | no       | false   | The bottom segment                              |
+| opacitySegment | number  | no       | 0.3     | Controls the opacity of the segments turned off |
 
-All segments set to true will be filled with the specified color.
+All segments set to true (turned on) will be filled with the specified color.
 
 ---
 
@@ -65,6 +67,7 @@ class App extends React.Component {
         <DigitalDigit
           digit={2}
           color="black"
+          opacitySegment={0.7}
         />
       </div>
     );
@@ -110,3 +113,7 @@ export default App;
 ### 1.0.1
 
 - Made the digit to take only the needed width
+
+### 1.0.2
+
+- Added a property for changing the opacity of the segments
