@@ -107,3 +107,6 @@ export default App;
 
 - digital-digit is made publicly available
 
+### 1.0.1
+
+- Made the digit to take only the needed width

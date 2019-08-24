@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const DigitalDigitRaw: React.FC<DigitalDigitRawProps> = ({ a, b, c, color, d, e, f, g }) => (
-  <svg width="100%" height="100%" viewBox="-1 -1 88 146">
+  <svg width="auto" height="100%" viewBox="-1 -1 88 146">
     {hel(13, 0, color, a)}
     {vel(0, 11, color, b)}
     {vel(66, 11, color, c)}

@@ -1,6 +1,6 @@
 {
   "name": "digital-digit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A digital digit which can display any digit from 0 to 9 and a component which be used to create a custom sign by lighting different segments of it.",
   "main": "lib/index.js",
   "sideEffects": false,
