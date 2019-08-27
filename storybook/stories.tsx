@@ -12,6 +12,7 @@ const style: React.CSSProperties = {
 const color = '#448844';
 
 storiesOf('DigitalDigit', module)
+  .addParameters({ options: { showPanel: false } })
   .add('with digit 0', () => (
     <div style={style}>
       <DigitalDigit digit={0} color={color} />
@@ -74,6 +75,7 @@ storiesOf('DigitalDigit', module)
   ));
 
 storiesOf('DigitalDigitRaw', module)
+  .addParameters({ options: { showPanel: false } })
   .add('with no segment highlighted', () => (
     <div style={style}>
       <DigitalDigitRaw color={color} />
