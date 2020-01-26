@@ -43,6 +43,7 @@ All segments set to true (turned on) will be filled with the specified color.
 | DigitalDigit _uses_ | React  |
 |--------------------:|:------:|
 |               1.0.x | 16.9.0 |
+|               1.1.x | 16.9.0 |
 
 ### About versioning schema used for DigitalDigit
 
@@ -117,3 +118,7 @@ export default App;
 ### 1.0.2
 
 - Added a property for changing the opacity of the segments
+
+### 1.1.0
+
+- Updated the packages

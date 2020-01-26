@@ -1,7 +1,7 @@
 {
   "name": "digital-digit",
-  "version": "1.0.2",
-  "description": "A digital digit which can display any digit from 0 to 9 and a component which be used to create a custom sign by lighting different segments of it.",
+  "version": "1.1.0",
+  "description": "A digital digit which can display any digit from 0 to 9 and a component which can be used to create a custom sign by lighting different segments of it.",
   "main": "lib/index.js",
   "sideEffects": false,
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iulian-radu-at/img-material-ui.git"
+    "url": "git+https://github.com/iulian-radu-at/digital-digit.git"
   },
   "files": [
     "lib",
@@ -30,31 +30,32 @@
   "author": "Iulian Radu <iulian.radu@gmx.at>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iulian-radu-at/img-material-ui/issues"
+    "url": "https://github.com/iulian-radu-at/digital-digit/issues"
   },
-  "homepage": "https://github.com/iulian-radu-at/img-material-ui#readme",
+  "homepage": "https://github.com/iulian-radu-at/digital-digit#readme",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@storybook/react": "^5.1.11",
+    "@babel/core": "^7.8.3",
+    "@storybook/react": "^5.3.9",
     "@types/babel-core": "^6.25.6",
-    "@types/enzyme": "^3.10.3",
+    "@types/enzyme": "^3.10.4",
     "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
-    "@types/rimraf": "^2.0.2",
-    "@types/storybook__react": "^4.0.2",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/rimraf": "^2.0.3",
+    "@types/storybook__react": "^5.2.1",
     "babel-core": "^6.26.3",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
-    "cross-env": "^5.2.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
+    "babel-preset-react-app": "^9.1.0",
+    "cross-env": "^7.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "rimraf": "^3.0.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.7.5"
   },
   "peerDependencies": {
     "react": "^16.0.0",
