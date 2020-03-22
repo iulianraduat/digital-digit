@@ -1,4 +1,4 @@
-# digital-digit
+# digital-digit ![Weekly downloads](https://img.shields.io/npm/dw/digital-digit "Weekly downloads")
 
 A digital digit which can display any digit from 0 to 9 and a component which be used to create a custom sign by lighting different segments of it
 
