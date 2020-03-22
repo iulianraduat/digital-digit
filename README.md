@@ -15,7 +15,7 @@ There are two components. One for displaying digits (DigitalDigit) and one gener
 ### Props accepted by DigitalDigit
 
 | Name           | Type   | Required | Default | Description                                     |
-|----------------|--------|----------|---------|-------------------------------------------------|
+| -------------- | ------ | -------- | ------- | ----------------------------------------------- |
 | color          | string | yes      | -       | The color of the segments                       |
 | digit          | 0 .. 9 | yes      | -       | The digit to be displayed                       |
 | opacitySegment | number | no       | 0.3     | Controls the opacity of the segments turned off |
@@ -23,7 +23,7 @@ There are two components. One for displaying digits (DigitalDigit) and one gener
 ### Props accepted by DigitalDigitRaw
 
 | Name           | Type    | Required | Default | Description                                     |
-|----------------|---------|----------|---------|-------------------------------------------------|
+| -------------- | ------- | -------- | ------- | ----------------------------------------------- |
 | a              | boolean | no       | false   | The top segment                                 |
 | b              | boolean | no       | false   | The upper left segment                          |
 | c              | boolean | no       | false   | The upper right segment                         |
@@ -41,7 +41,7 @@ All segments set to true (turned on) will be filled with the specified color.
 ## Versions
 
 | DigitalDigit _uses_ | React  |
-|--------------------:|:------:|
+| ------------------: | :----: |
 |               1.0.x | 16.9.0 |
 |               1.1.x | 16.9.0 |
 
@@ -65,11 +65,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <DigitalDigit
-          digit={2}
-          color="black"
-          opacitySegment={0.7}
-        />
+        <DigitalDigit digit={2} color="black" opacitySegment={0.7} />
       </div>
     );
   }
@@ -88,13 +84,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <DigitalDigitRaw
-          b={true}
-          c={true}
-          d={true}
-          f={true}
-          color="black"
-        />
+        <DigitalDigitRaw b={true} c={true} d={true} f={true} color="black" />
       </div>
     );
   }
@@ -122,3 +112,8 @@ export default App;
 ### 1.1.0
 
 - Updated the packages
+
+### 1.1.1
+
+- Updated packages
+- Moved from npm to yarn
