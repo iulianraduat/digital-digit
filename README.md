@@ -117,3 +117,7 @@ export default App;
 
 - Updated packages
 - Moved from npm to yarn
+
+### 1.1.2
+
+- Updated packages
