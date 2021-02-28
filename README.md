@@ -1,4 +1,4 @@
-# digital-digit ![Weekly downloads](https://img.shields.io/npm/dw/digital-digit "Weekly downloads")
+# digital-digit ![Weekly downloads](https://img.shields.io/npm/dw/digital-digit 'Weekly downloads')
 
 A digital digit which can display any digit from 0 to 9 and a component which be used to create a custom sign by lighting different segments of it
 
@@ -40,10 +40,11 @@ All segments set to true (turned on) will be filled with the specified color.
 
 ## Versions
 
-| DigitalDigit _uses_ | React  |
-| ------------------: | :----: |
-|               1.0.x | 16.9.0 |
-|               1.1.x | 16.9.0 |
+| DigitalDigit _uses_ |      React       |
+| ------------------: | :--------------: |
+|               1.0.x |      16.9.0      |
+|               1.1.x |      16.9.0      |
+|               1.2.x | 16.9.0 or 17.0.0 |
 
 ### About versioning schema used for DigitalDigit
 
@@ -58,8 +59,8 @@ All segments set to true (turned on) will be filled with the specified color.
 Displaying a digit:
 
 ```js
-import * as React from "react";
-import DigitalDigit from "digital-digit";
+import * as React from 'react';
+import DigitalDigit from 'digital-digit';
 
 class App extends React.Component {
   render() {
@@ -77,8 +78,8 @@ export default App;
 Displaying the digit 4 using the raw component:
 
 ```js
-import * as React from "react";
-import { DigitalDigitRaw } from "digital-digit";
+import * as React from 'react';
+import { DigitalDigitRaw } from 'digital-digit';
 
 class App extends React.Component {
   render() {
@@ -129,3 +130,7 @@ export default App;
 ### 1.1.4
 
 - Fixed crash produced by "export \* from"
+
+### 1.2.0
+
+- Accepting React 17 as peerDependencies
