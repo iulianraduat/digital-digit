@@ -116,16 +116,16 @@ export default App;
 
 ### 1.1.1
 
-- Updated packages
+- Updated the packages
 - Moved from npm to yarn
 
 ### 1.1.2
 
-- Updated packages
+- Updated the packages
 
 ### 1.1.3
 
-- Updated packages
+- Updated the packages
 
 ### 1.1.4
 
@@ -137,4 +137,8 @@ export default App;
 
 ### 1.2.1
 
-- Updated packages
+- Updated the packages
+
+### 1.2.2
+
+- Updated the packages
