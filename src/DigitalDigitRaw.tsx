@@ -1,6 +1,16 @@
 import * as React from 'react';
 
-const DigitalDigitRaw: React.FC<DigitalDigitRawProps> = ({ a, b, c, color, d, e, f, g, opacitySegment }) => (
+const DigitalDigitRaw: React.FC<DigitalDigitRawProps> = ({
+  a,
+  b,
+  c,
+  color,
+  d,
+  e,
+  f,
+  g,
+  opacitySegment,
+}) => (
   <svg height="100%" viewBox="-1 -1 88 146">
     {hel(13, 0, color, opacitySegment, a)}
     {vel(0, 11, color, opacitySegment, b)}
@@ -12,16 +22,42 @@ const DigitalDigitRaw: React.FC<DigitalDigitRawProps> = ({ a, b, c, color, d, e,
   </svg>
 );
 
-const vel = (x: number, y: number, color: string, opacitySegment?: number, filled?: boolean) => (
+const vel = (
+  x: number,
+  y: number,
+  color: string,
+  opacitySegment?: number,
+  filled?: boolean
+) => (
   <polygon
-    points={getPoints(x, y, [[0, 10], [0, 50], [10, 60], [20, 50], [20, 10], [10, 0]])}
+    points={getPoints(x, y, [
+      [0, 10],
+      [0, 50],
+      [10, 60],
+      [20, 50],
+      [20, 10],
+      [10, 0],
+    ])}
     style={getStyle(color, opacitySegment, filled)}
   />
 );
 
-const hel = (x: number, y: number, color: string, opacitySegment?: number, filled?: boolean) => (
+const hel = (
+  x: number,
+  y: number,
+  color: string,
+  opacitySegment?: number,
+  filled?: boolean
+) => (
   <polygon
-    points={getPoints(x, y, [[10, 0], [50, 0], [60, 10], [50, 20], [10, 20], [0, 10]])}
+    points={getPoints(x, y, [
+      [10, 0],
+      [50, 0],
+      [60, 10],
+      [50, 20],
+      [10, 20],
+      [0, 10],
+    ])}
     style={getStyle(color, opacitySegment, filled)}
   />
 );
@@ -32,14 +68,18 @@ const getPoints = (x: number, y: number, points: number[][]) => {
   return str;
 };
 
-const getStyle = (color: string, opacitySegment?: number, filled?: boolean): React.CSSProperties => ({
+const getStyle = (
+  color: string,
+  opacitySegment?: number,
+  filled?: boolean
+): React.CSSProperties => ({
   fill: filled ? color : 'none',
   opacity: filled ? 1 : opacitySegment === undefined ? 0.3 : opacitySegment,
   stroke: color,
-  strokeWidth: 1
+  strokeWidth: 1,
 });
 
-interface DigitalDigitRawProps extends React.Props<any> {
+interface DigitalDigitRawProps {
   a?: boolean;
   b?: boolean;
   c?: boolean;

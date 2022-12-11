@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface DigitalDigitProps extends React.Props<DigitalDigit> {
+export interface DigitalDigitProps {
   color: string;
   digit: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
   opacitySegment?: number;
@@ -8,7 +8,7 @@ export interface DigitalDigitProps extends React.Props<DigitalDigit> {
 
 declare class DigitalDigit extends React.Component<DigitalDigitProps> {}
 
-export interface DigitalDigitRawProps extends React.Props<DigitalDigitRaw> {
+export interface DigitalDigitRawProps {
   a?: boolean;
   b?: boolean;
   c?: boolean;
