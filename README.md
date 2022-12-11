@@ -45,6 +45,7 @@ All segments set to true (turned on) will be filled with the specified color.
 |               1.0.x |      16.9.0      |
 |               1.1.x |      16.9.0      |
 |               1.2.x | 16.9.0 or 17.0.0 |
+|               2.0.x |      18.0.0      |
 
 ### About versioning schema used for DigitalDigit
 
@@ -142,3 +143,7 @@ export default App;
 ### 1.2.2
 
 - Updated the packages
+
+### 2.0.0
+
+- Minimum accepted React version is 18
