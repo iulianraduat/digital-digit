@@ -147,3 +147,7 @@ export default App;
 ### 2.0.0
 
 - Minimum accepted React version is 18
+
+### 2.0.1
+
+- Updated the packages
